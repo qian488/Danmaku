@@ -1,0 +1,6 @@
+# 主菜单阶段预载：仅进入 Home 所需（BGM home、切角 UI 音效、logo）。
+# 战斗 BGM、关卡音效、敌弹/自机图集等见 Resources/Demos/Danmaku/GamePreloadList（由弹幕场景 DanmakuGameController 预载）。
+
+Demos/Danmaku/Audio/BGM/home
+Demos/Danmaku/Audio/SFX/选择
+Demos/Danmaku/Img/logo

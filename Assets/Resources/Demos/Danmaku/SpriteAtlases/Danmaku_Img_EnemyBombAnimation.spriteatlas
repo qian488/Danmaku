@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Danmaku_Img_EnemyBombAnimation
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 3571e0dc979c59046806c656f37b7768, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 2673fe90aca9beb44a4ce6b18245baf3: 21300000
+    - c28c0df0596478743ba8b1f697f079fb: 21300000
+    - cda7ff11b59da7844b7a4dc06f837331: 21300000
+    - 2784344114e2e244db7c0ad4ac46c0de: 21300000
+    - 56bcfac1cbfd7904081001ef8e599756: 21300000
+    - 21f885f1f5ac445439b8aa0942ab4174: 21300000
+    - 6a336f92056b4a44192fa1d494de2b7a: 21300000
+    - a47fc91308eab5f4faf3b82a488cf162: 21300000
+    - 93df1734c5a422948835e79865981b97: 21300000
+    - 08e2ce752b099fd488c548853195db4d: 21300000
+    - ca4512a50dbd3424d94bb5472224f708: 21300000
+    - 1dd4e7365bda16b44ae982004258ccc8: 21300000
+    - c8a541b6584a83c43b1e6665e26c56a4: 21300000
+    - 77d5e6f77ee018743a4a0cb6d6299d68: 21300000
+    - c8932d08c2bb6dd48800887da6579863: 21300000
+    - 60cc1019968d66a4ab7241509856d022: 21300000
+    - f4f11f693189714489e756bb6b0ce757: 21300000
+    - 21e98a4a7e8c116439b40e2de889d75f: 21300000
+    - a908ef4ad2ba936408e3b53db417ed38: 21300000
+    - e9628d5aed4c16742af3a809db2c4697: 21300000
+    - fed5974bf03605d4da76eba7c94abc81: 21300000
+    - 567a4d5bb898a8b42a511f3b34f5a01f: 21300000
+    - 7b4d2a6cccd152646a0767a49969ebbb: 21300000
+    - 37b564aca794c2741b01691b9e47a92c: 21300000
+    - 21fe489dbb2d46e44af95541296109de: 21300000
+    - 30b9055eeb28e3d4bb9c096e94b96705: 21300000
+    - 6e9e58ee9efa35b4694e91e7a8818f04: 21300000
+    - 39de25efab8828b42ab10dc166fd566a: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 2673fe90aca9beb44a4ce6b18245baf3, type: 3}
+  - {fileID: 21300000, guid: c28c0df0596478743ba8b1f697f079fb, type: 3}
+  - {fileID: 21300000, guid: cda7ff11b59da7844b7a4dc06f837331, type: 3}
+  - {fileID: 21300000, guid: 2784344114e2e244db7c0ad4ac46c0de, type: 3}
+  - {fileID: 21300000, guid: 56bcfac1cbfd7904081001ef8e599756, type: 3}
+  - {fileID: 21300000, guid: 21f885f1f5ac445439b8aa0942ab4174, type: 3}
+  - {fileID: 21300000, guid: 6a336f92056b4a44192fa1d494de2b7a, type: 3}
+  - {fileID: 21300000, guid: a47fc91308eab5f4faf3b82a488cf162, type: 3}
+  - {fileID: 21300000, guid: 93df1734c5a422948835e79865981b97, type: 3}
+  - {fileID: 21300000, guid: 08e2ce752b099fd488c548853195db4d, type: 3}
+  - {fileID: 21300000, guid: ca4512a50dbd3424d94bb5472224f708, type: 3}
+  - {fileID: 21300000, guid: 1dd4e7365bda16b44ae982004258ccc8, type: 3}
+  - {fileID: 21300000, guid: c8a541b6584a83c43b1e6665e26c56a4, type: 3}
+  - {fileID: 21300000, guid: 77d5e6f77ee018743a4a0cb6d6299d68, type: 3}
+  - {fileID: 21300000, guid: c8932d08c2bb6dd48800887da6579863, type: 3}
+  - {fileID: 21300000, guid: 60cc1019968d66a4ab7241509856d022, type: 3}
+  - {fileID: 21300000, guid: f4f11f693189714489e756bb6b0ce757, type: 3}
+  - {fileID: 21300000, guid: 21e98a4a7e8c116439b40e2de889d75f, type: 3}
+  - {fileID: 21300000, guid: a908ef4ad2ba936408e3b53db417ed38, type: 3}
+  - {fileID: 21300000, guid: e9628d5aed4c16742af3a809db2c4697, type: 3}
+  - {fileID: 21300000, guid: fed5974bf03605d4da76eba7c94abc81, type: 3}
+  - {fileID: 21300000, guid: 567a4d5bb898a8b42a511f3b34f5a01f, type: 3}
+  - {fileID: 21300000, guid: 7b4d2a6cccd152646a0767a49969ebbb, type: 3}
+  - {fileID: 21300000, guid: 37b564aca794c2741b01691b9e47a92c, type: 3}
+  - {fileID: 21300000, guid: 21fe489dbb2d46e44af95541296109de, type: 3}
+  - {fileID: 21300000, guid: 30b9055eeb28e3d4bb9c096e94b96705, type: 3}
+  - {fileID: 21300000, guid: 6e9e58ee9efa35b4694e91e7a8818f04, type: 3}
+  - {fileID: 21300000, guid: 39de25efab8828b42ab10dc166fd566a, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - B4
+  - B9
+  - biu13
+  - B7
+  - B2
+  - B5
+  - B3
+  - biu10
+  - B6
+  - biu7
+  - biu4
+  - B13
+  - biu9
+  - biu6
+  - biu11
+  - B1
+  - biu8
+  - B10
+  - biu0
+  - biu5
+  - B0
+  - B11
+  - B12
+  - B8
+  - biu1
+  - biu3
+  - biu12
+  - biu2
+  m_RenderDataMap: {}
+  m_Tag: Danmaku_Img_EnemyBombAnimation
+  m_IsVariant: 0

@@ -1,0 +1,5009 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e341e7ffd12dfca4a93f1d8c7d3d342a, type: 3}
+  m_Name: Stage01
+  m_EditorClassIdentifier: 
+  StageId: Stage01
+  StageBGM: Demos/Danmaku/Audio/BGM/game
+  BackgroundPrefabPath: 
+  BulletLayerCount: 1
+  SpawnEnemyFromRightEdgeOffscreen: 1
+  EnemySpawnExtraRightWorld: 1.2
+  BulletWaveRandomXBetweenPlayRightAndOffscreen: 0
+  BulletSpawnExtraRightMin: 0
+  BulletSpawnExtraRightMax: 5
+  EnablePeriodicBossSpawns: 0
+  PeriodicBossIntervalSeconds: 30
+  PeriodicBossEnemyPrefabPath: 
+  PeriodicBossFolderNames: []
+  BossArenaBulletLoopFirstDelaySeconds: 0.5
+  BossArenaBulletLoopIntervalSeconds: 2
+  BossArenaBulletLoop:
+  - BulletOrigin: {x: 6.4, y: 2.2}
+    BulletWaveRandomXBetweenPlayRightAndOffscreen: 0
+    BulletSpawnExtraRightMin: -1
+    BulletSpawnExtraRightMax: -1
+    Shooter:
+      Ways: 14
+      Angle: 180
+      VecAngle: 180
+      Range: 140
+      Radius: 0.18
+      Spy: 0
+    BulletSpeed: 2.65
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BulletStyleFolderIndex: -1
+    BulletSpriteVariantIndex: -1
+  - BulletOrigin: {x: 6.35, y: 0}
+    BulletWaveRandomXBetweenPlayRightAndOffscreen: 0
+    BulletSpawnExtraRightMin: -1
+    BulletSpawnExtraRightMax: -1
+    Shooter:
+      Ways: 20
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.35
+      Spy: 0
+    BulletSpeed: 2.9
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BulletStyleFolderIndex: -1
+    BulletSpriteVariantIndex: -1
+  - BulletOrigin: {x: 6.35, y: -2.4}
+    BulletWaveRandomXBetweenPlayRightAndOffscreen: 0
+    BulletSpawnExtraRightMin: -1
+    BulletSpawnExtraRightMax: -1
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.28
+      Spy: 0
+    BulletSpeed: 2.66
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BulletStyleFolderIndex: -1
+    BulletSpriteVariantIndex: -1
+  Tasks:
+  - TriggerTime: 0
+    TaskType: 4
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: Stage 01 — Easy（简单）
+  - TriggerTime: 2.0
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.5, y: 2.4}
+    Shooter:
+      Ways: 8
+      Angle: 180
+      VecAngle: 180
+      Range: 110
+      Radius: 0.12
+      Spy: 1
+    BulletSpeed: 2.29
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 2.35
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 2.65
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 4.109
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.2, y: 2.4}
+    Shooter:
+      Ways: 10
+      Angle: 180
+      VecAngle: 180
+      Range: 129
+      Radius: 0.23
+      Spy: 0
+    BulletSpeed: 2.42
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 6.503
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.0, y: 1.2}
+    Shooter:
+      Ways: 11
+      Angle: 180
+      VecAngle: 180
+      Range: 148
+      Radius: 0.34
+      Spy: 0
+    BulletSpeed: 2.55
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 6.853
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 9.182
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.8, y: 1.2}
+    Shooter:
+      Ways: 13
+      Angle: 180
+      VecAngle: 180
+      Range: 167
+      Radius: 0.45
+      Spy: 0
+    BulletSpeed: 2.67
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 12.146
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.4, y: 0.0}
+    Shooter:
+      Ways: 15
+      Angle: 180
+      VecAngle: 180
+      Range: 186
+      Radius: 0.56
+      Spy: 0
+    BulletSpeed: 2.8
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 12.496
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 14.255
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.1, y: 0.0}
+    Shooter:
+      Ways: 17
+      Angle: 180
+      VecAngle: 180
+      Range: 205
+      Radius: 0.12
+      Spy: 0
+    BulletSpeed: 2.93
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 14.905
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 1.2}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 16.649
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.5, y: -1.2}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 224
+      Radius: 0.23
+      Spy: 0
+    BulletSpeed: 2.29
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 16.999
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 19.328
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.2, y: -1.2}
+    Shooter:
+      Ways: 20
+      Angle: 180
+      VecAngle: 180
+      Range: 243
+      Radius: 0.34
+      Spy: 0
+    BulletSpeed: 2.42
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 22.292
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.0, y: -2.4}
+    Shooter:
+      Ways: 8
+      Angle: 180
+      VecAngle: 180
+      Range: 262
+      Radius: 0.45
+      Spy: 0
+    BulletSpeed: 2.55
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 22.642
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 24.401
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.8, y: -2.4}
+    Shooter:
+      Ways: 10
+      Angle: 180
+      VecAngle: 180
+      Range: 281
+      Radius: 0.56
+      Spy: 1
+    BulletSpeed: 2.67
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 26.795
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.4, y: 1.8}
+    Shooter:
+      Ways: 11
+      Angle: 180
+      VecAngle: 180
+      Range: 300
+      Radius: 0.12
+      Spy: 0
+    BulletSpeed: 2.8
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 27.145
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 27.445
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 29.474
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.1, y: 1.8}
+    Shooter:
+      Ways: 13
+      Angle: 180
+      VecAngle: 180
+      Range: 319
+      Radius: 0.23
+      Spy: 0
+    BulletSpeed: 2.93
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 30.06
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.4}
+    SpawnEnemyUseManualPosition: 0
+    IsBossEnemy: 1
+    BossFolderName: Alice
+    BlockStageTimelineUntilBossDefeated: 1
+    BossHpStageMultiplier: 1
+    BulletOrigin: {x: 0, y: 0}
+    BulletWaveRandomXBetweenPlayRightAndOffscreen: 0
+    BulletSpawnExtraRightMin: -1
+    BulletSpawnExtraRightMax: -1
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 32.438
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.5, y: -1.8}
+    Shooter:
+      Ways: 15
+      Angle: 180
+      VecAngle: 180
+      Range: 338
+      Radius: 0.34
+      Spy: 0
+    BulletSpeed: 2.29
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 32.788
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 34.547
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.2, y: -1.8}
+    Shooter:
+      Ways: 17
+      Angle: 180
+      VecAngle: 180
+      Range: 357
+      Radius: 0.45
+      Spy: 0
+    BulletSpeed: 2.42
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 36.941
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.0, y: 0.8}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 126
+      Radius: 0.56
+      Spy: 0
+    BulletSpeed: 2.55
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 37.291
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 39.62
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.8, y: 0.8}
+    Shooter:
+      Ways: 20
+      Angle: 180
+      VecAngle: 180
+      Range: 145
+      Radius: 0.12
+      Spy: 0
+    BulletSpeed: 2.67
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 40.27
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.2}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 42.584
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.4, y: 2.4}
+    Shooter:
+      Ways: 8
+      Angle: 180
+      VecAngle: 180
+      Range: 164
+      Radius: 0.23
+      Spy: 0
+    BulletSpeed: 2.8
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 42.934
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 44.693
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.1, y: 2.4}
+    Shooter:
+      Ways: 10
+      Angle: 180
+      VecAngle: 180
+      Range: 183
+      Radius: 0.34
+      Spy: 0
+    BulletSpeed: 2.93
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 47.087
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.5, y: 1.2}
+    Shooter:
+      Ways: 11
+      Angle: 180
+      VecAngle: 180
+      Range: 202
+      Radius: 0.45
+      Spy: 1
+    BulletSpeed: 2.29
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 47.437
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 49.766
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.2, y: 1.2}
+    Shooter:
+      Ways: 13
+      Angle: 180
+      VecAngle: 180
+      Range: 221
+      Radius: 0.56
+      Spy: 0
+    BulletSpeed: 2.42
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 52.73
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.0, y: 0.0}
+    Shooter:
+      Ways: 15
+      Angle: 180
+      VecAngle: 180
+      Range: 240
+      Radius: 0.12
+      Spy: 0
+    BulletSpeed: 2.55
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 53.08
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 53.38
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 54.839
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.8, y: 0.0}
+    Shooter:
+      Ways: 17
+      Angle: 180
+      VecAngle: 180
+      Range: 259
+      Radius: 0.23
+      Spy: 0
+    BulletSpeed: 2.67
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 57.233
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.4, y: -1.2}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 278
+      Radius: 0.34
+      Spy: 0
+    BulletSpeed: 2.8
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 57.583
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 59.912
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.1, y: -1.2}
+    Shooter:
+      Ways: 20
+      Angle: 180
+      VecAngle: 180
+      Range: 297
+      Radius: 0.45
+      Spy: 0
+    BulletSpeed: 2.93
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 60.06
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.4}
+    SpawnEnemyUseManualPosition: 0
+    IsBossEnemy: 1
+    BossFolderName: AwanLjan
+    BlockStageTimelineUntilBossDefeated: 1
+    BossHpStageMultiplier: 1
+    BulletOrigin: {x: 0, y: 0}
+    BulletWaveRandomXBetweenPlayRightAndOffscreen: 0
+    BulletSpawnExtraRightMin: -1
+    BulletSpawnExtraRightMax: -1
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 62.876
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.5, y: -2.4}
+    Shooter:
+      Ways: 8
+      Angle: 180
+      VecAngle: 180
+      Range: 316
+      Radius: 0.56
+      Spy: 0
+    BulletSpeed: 2.29
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 63.226
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 64.985
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.2, y: -2.4}
+    Shooter:
+      Ways: 10
+      Angle: 180
+      VecAngle: 180
+      Range: 335
+      Radius: 0.12
+      Spy: 0
+    BulletSpeed: 2.42
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 65.635
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 67.379
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.0, y: 1.8}
+    Shooter:
+      Ways: 11
+      Angle: 180
+      VecAngle: 180
+      Range: 354
+      Radius: 0.23
+      Spy: 0
+    BulletSpeed: 2.55
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 67.729
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 70.058
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.8, y: 1.8}
+    Shooter:
+      Ways: 13
+      Angle: 180
+      VecAngle: 180
+      Range: 123
+      Radius: 0.34
+      Spy: 1
+    BulletSpeed: 2.67
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 73.022
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.4, y: -1.8}
+    Shooter:
+      Ways: 15
+      Angle: 180
+      VecAngle: 180
+      Range: 142
+      Radius: 0.45
+      Spy: 0
+    BulletSpeed: 2.8
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 73.372
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 75.131
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.1, y: -1.8}
+    Shooter:
+      Ways: 17
+      Angle: 180
+      VecAngle: 180
+      Range: 161
+      Radius: 0.56
+      Spy: 0
+    BulletSpeed: 2.93
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 77.525
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.5, y: 0.8}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 180
+      Radius: 0.12
+      Spy: 0
+    BulletSpeed: 2.29
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 77.875
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 78.175
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 80.204
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.2, y: 0.8}
+    Shooter:
+      Ways: 20
+      Angle: 180
+      VecAngle: 180
+      Range: 199
+      Radius: 0.23
+      Spy: 0
+    BulletSpeed: 2.42
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 83.168
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.0, y: 2.4}
+    Shooter:
+      Ways: 8
+      Angle: 180
+      VecAngle: 180
+      Range: 218
+      Radius: 0.34
+      Spy: 0
+    BulletSpeed: 2.55
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 83.518
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 85.277
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.8, y: 2.4}
+    Shooter:
+      Ways: 10
+      Angle: 180
+      VecAngle: 180
+      Range: 237
+      Radius: 0.45
+      Spy: 0
+    BulletSpeed: 2.67
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 87.671
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.4, y: 1.2}
+    Shooter:
+      Ways: 11
+      Angle: 180
+      VecAngle: 180
+      Range: 256
+      Radius: 0.56
+      Spy: 0
+    BulletSpeed: 2.8
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 88.021
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 90.06
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.4}
+    SpawnEnemyUseManualPosition: 0
+    IsBossEnemy: 1
+    BossFolderName: Cirno
+    BlockStageTimelineUntilBossDefeated: 1
+    BossHpStageMultiplier: 1
+    BulletOrigin: {x: 0, y: 0}
+    BulletWaveRandomXBetweenPlayRightAndOffscreen: 0
+    BulletSpawnExtraRightMin: -1
+    BulletSpawnExtraRightMax: -1
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 90.35
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.1, y: 1.2}
+    Shooter:
+      Ways: 13
+      Angle: 180
+      VecAngle: 180
+      Range: 275
+      Radius: 0.12
+      Spy: 0
+    BulletSpeed: 2.93
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 91.0
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 93.314
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.5, y: 0.0}
+    Shooter:
+      Ways: 15
+      Angle: 180
+      VecAngle: 180
+      Range: 294
+      Radius: 0.23
+      Spy: 1
+    BulletSpeed: 2.29
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 93.664
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 95.42
+    TaskType: 3
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: Phase Mid
+    MessageText: 
+  - TriggerTime: 100.0
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -3.3}
+    Shooter:
+      Ways: 13
+      Angle: 180
+      VecAngle: 180
+      Range: 150
+      Radius: 0.18
+      Spy: 0
+    BulletSpeed: 2.48
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 100.15
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 100.5
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 100.65
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -2.38}
+    Shooter:
+      Ways: 13
+      Angle: 180
+      VecAngle: 180
+      Range: 150
+      Radius: 0.18
+      Spy: 0
+    BulletSpeed: 2.48
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 102.508
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.23, y: -2.38}
+    Shooter:
+      Ways: 14
+      Angle: 180
+      VecAngle: 180
+      Range: 151
+      Radius: 0.32
+      Spy: 0
+    BulletSpeed: 2.64
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 103.158
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.23, y: -1.46}
+    Shooter:
+      Ways: 14
+      Angle: 180
+      VecAngle: 180
+      Range: 151
+      Radius: 0.32
+      Spy: 0
+    BulletSpeed: 2.64
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 105.415
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.11, y: -1.46}
+    Shooter:
+      Ways: 15
+      Angle: 180
+      VecAngle: 180
+      Range: 152
+      Radius: 0.46
+      Spy: 0
+    BulletSpeed: 2.8
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 105.565
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 105.915
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 106.065
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.11, y: -0.54}
+    Shooter:
+      Ways: 15
+      Angle: 180
+      VecAngle: 180
+      Range: 152
+      Radius: 0.46
+      Spy: 0
+    BulletSpeed: 2.8
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 108.721
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.99, y: -0.54}
+    Shooter:
+      Ways: 16
+      Angle: 180
+      VecAngle: 180
+      Range: 153
+      Radius: 0.6
+      Spy: 0
+    BulletSpeed: 2.96
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 109.371
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.99, y: 0.38}
+    Shooter:
+      Ways: 16
+      Angle: 180
+      VecAngle: 180
+      Range: 153
+      Radius: 0.6
+      Spy: 0
+    BulletSpeed: 2.96
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 112.426
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.87, y: 0.38}
+    Shooter:
+      Ways: 17
+      Angle: 180
+      VecAngle: 180
+      Range: 154
+      Radius: 0.18
+      Spy: 0
+    BulletSpeed: 3.12
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 112.576
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 112.926
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 113.076
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.87, y: 1.3}
+    Shooter:
+      Ways: 17
+      Angle: 180
+      VecAngle: 180
+      Range: 154
+      Radius: 0.18
+      Spy: 0
+    BulletSpeed: 3.12
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 116.53
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.75, y: 1.3}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 155
+      Radius: 0.32
+      Spy: 0
+    BulletSpeed: 3.29
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 117.18
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.75, y: 2.22}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 155
+      Radius: 0.32
+      Spy: 0
+    BulletSpeed: 3.29
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 119.038
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: 2.22}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 156
+      Radius: 0.46
+      Spy: 0
+    BulletSpeed: 3.45
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 119.188
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 119.538
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 119.688
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: 3.14}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 156
+      Radius: 0.46
+      Spy: 0
+    BulletSpeed: 3.45
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 120.06
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.4}
+    SpawnEnemyUseManualPosition: 0
+    IsBossEnemy: 1
+    BossFolderName: Daiyousei
+    BlockStageTimelineUntilBossDefeated: 1
+    BossHpStageMultiplier: 1
+    BulletOrigin: {x: 0, y: 0}
+    BulletWaveRandomXBetweenPlayRightAndOffscreen: 0
+    BulletSpawnExtraRightMin: -1
+    BulletSpawnExtraRightMax: -1
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 121.945
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.23, y: 3.14}
+    Shooter:
+      Ways: 19
+      Angle: 180
+      VecAngle: 180
+      Range: 157
+      Radius: 0.6
+      Spy: 0
+    BulletSpeed: 2.48
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 122.595
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.23, y: -3.3}
+    Shooter:
+      Ways: 19
+      Angle: 180
+      VecAngle: 180
+      Range: 157
+      Radius: 0.6
+      Spy: 0
+    BulletSpeed: 2.48
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 125.251
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.11, y: -3.3}
+    Shooter:
+      Ways: 20
+      Angle: 180
+      VecAngle: 180
+      Range: 158
+      Radius: 0.18
+      Spy: 0
+    BulletSpeed: 2.64
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 125.401
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 125.751
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 125.901
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.11, y: -2.38}
+    Shooter:
+      Ways: 20
+      Angle: 180
+      VecAngle: 180
+      Range: 158
+      Radius: 0.18
+      Spy: 0
+    BulletSpeed: 2.64
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 128.956
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.99, y: -2.38}
+    Shooter:
+      Ways: 13
+      Angle: 180
+      VecAngle: 180
+      Range: 159
+      Radius: 0.32
+      Spy: 0
+    BulletSpeed: 2.8
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 129.606
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.99, y: -1.46}
+    Shooter:
+      Ways: 13
+      Angle: 180
+      VecAngle: 180
+      Range: 159
+      Radius: 0.32
+      Spy: 0
+    BulletSpeed: 2.8
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 133.06
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.87, y: -1.46}
+    Shooter:
+      Ways: 14
+      Angle: 180
+      VecAngle: 180
+      Range: 160
+      Radius: 0.46
+      Spy: 0
+    BulletSpeed: 2.96
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 133.21
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 133.56
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 133.71
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.87, y: -0.54}
+    Shooter:
+      Ways: 14
+      Angle: 180
+      VecAngle: 180
+      Range: 160
+      Radius: 0.46
+      Spy: 0
+    BulletSpeed: 2.96
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 135.568
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.75, y: -0.54}
+    Shooter:
+      Ways: 15
+      Angle: 180
+      VecAngle: 180
+      Range: 161
+      Radius: 0.6
+      Spy: 0
+    BulletSpeed: 3.12
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 136.218
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.75, y: 0.38}
+    Shooter:
+      Ways: 15
+      Angle: 180
+      VecAngle: 180
+      Range: 161
+      Radius: 0.6
+      Spy: 0
+    BulletSpeed: 3.12
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 138.475
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: 0.38}
+    Shooter:
+      Ways: 16
+      Angle: 180
+      VecAngle: 180
+      Range: 162
+      Radius: 0.18
+      Spy: 0
+    BulletSpeed: 3.29
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 138.625
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 138.975
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 139.125
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: 1.3}
+    Shooter:
+      Ways: 16
+      Angle: 180
+      VecAngle: 180
+      Range: 162
+      Radius: 0.18
+      Spy: 0
+    BulletSpeed: 3.29
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 141.781
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.23, y: 1.3}
+    Shooter:
+      Ways: 17
+      Angle: 180
+      VecAngle: 180
+      Range: 163
+      Radius: 0.32
+      Spy: 0
+    BulletSpeed: 3.45
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 142.431
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.23, y: 2.22}
+    Shooter:
+      Ways: 17
+      Angle: 180
+      VecAngle: 180
+      Range: 163
+      Radius: 0.32
+      Spy: 0
+    BulletSpeed: 3.45
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 145.486
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.11, y: 2.22}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 164
+      Radius: 0.46
+      Spy: 0
+    BulletSpeed: 2.48
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 145.636
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 145.986
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 146.136
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.11, y: 3.14}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 164
+      Radius: 0.46
+      Spy: 0
+    BulletSpeed: 2.48
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 149.59
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.99, y: 3.14}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 165
+      Radius: 0.6
+      Spy: 0
+    BulletSpeed: 2.64
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 150.06
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.4}
+    SpawnEnemyUseManualPosition: 0
+    IsBossEnemy: 1
+    BossFolderName: DaiyouseiB
+    BlockStageTimelineUntilBossDefeated: 1
+    BossHpStageMultiplier: 1
+    BulletOrigin: {x: 0, y: 0}
+    BulletWaveRandomXBetweenPlayRightAndOffscreen: 0
+    BulletSpawnExtraRightMin: -1
+    BulletSpawnExtraRightMax: -1
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 150.24
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.99, y: -3.3}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 165
+      Radius: 0.6
+      Spy: 0
+    BulletSpeed: 2.64
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 152.098
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.87, y: -3.3}
+    Shooter:
+      Ways: 19
+      Angle: 180
+      VecAngle: 180
+      Range: 166
+      Radius: 0.18
+      Spy: 0
+    BulletSpeed: 2.8
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 152.248
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 152.598
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 152.748
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.87, y: -2.38}
+    Shooter:
+      Ways: 19
+      Angle: 180
+      VecAngle: 180
+      Range: 166
+      Radius: 0.18
+      Spy: 0
+    BulletSpeed: 2.8
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 155.005
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.75, y: -2.38}
+    Shooter:
+      Ways: 20
+      Angle: 180
+      VecAngle: 180
+      Range: 167
+      Radius: 0.32
+      Spy: 0
+    BulletSpeed: 2.96
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 155.655
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.75, y: -1.46}
+    Shooter:
+      Ways: 20
+      Angle: 180
+      VecAngle: 180
+      Range: 167
+      Radius: 0.32
+      Spy: 0
+    BulletSpeed: 2.96
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 158.311
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -1.46}
+    Shooter:
+      Ways: 13
+      Angle: 180
+      VecAngle: 180
+      Range: 168
+      Radius: 0.46
+      Spy: 0
+    BulletSpeed: 3.12
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 158.461
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 158.811
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 158.961
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -0.54}
+    Shooter:
+      Ways: 13
+      Angle: 180
+      VecAngle: 180
+      Range: 168
+      Radius: 0.46
+      Spy: 0
+    BulletSpeed: 3.12
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 162.016
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.23, y: -0.54}
+    Shooter:
+      Ways: 14
+      Angle: 180
+      VecAngle: 180
+      Range: 169
+      Radius: 0.6
+      Spy: 0
+    BulletSpeed: 3.29
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 162.666
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.23, y: 0.38}
+    Shooter:
+      Ways: 14
+      Angle: 180
+      VecAngle: 180
+      Range: 169
+      Radius: 0.6
+      Spy: 0
+    BulletSpeed: 3.29
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 166.12
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.11, y: 0.38}
+    Shooter:
+      Ways: 15
+      Angle: 180
+      VecAngle: 180
+      Range: 170
+      Radius: 0.18
+      Spy: 0
+    BulletSpeed: 3.45
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 166.27
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 166.62
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 166.77
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.11, y: 1.3}
+    Shooter:
+      Ways: 15
+      Angle: 180
+      VecAngle: 180
+      Range: 170
+      Radius: 0.18
+      Spy: 0
+    BulletSpeed: 3.45
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 168.628
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.99, y: 1.3}
+    Shooter:
+      Ways: 16
+      Angle: 180
+      VecAngle: 180
+      Range: 171
+      Radius: 0.32
+      Spy: 0
+    BulletSpeed: 2.48
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 169.278
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.99, y: 2.22}
+    Shooter:
+      Ways: 16
+      Angle: 180
+      VecAngle: 180
+      Range: 171
+      Radius: 0.32
+      Spy: 0
+    BulletSpeed: 2.48
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 171.535
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.87, y: 2.22}
+    Shooter:
+      Ways: 17
+      Angle: 180
+      VecAngle: 180
+      Range: 172
+      Radius: 0.46
+      Spy: 0
+    BulletSpeed: 2.64
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 171.685
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 172.035
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 172.185
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 5.87, y: 3.14}
+    Shooter:
+      Ways: 17
+      Angle: 180
+      VecAngle: 180
+      Range: 172
+      Radius: 0.46
+      Spy: 0
+    BulletSpeed: 2.64
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 174.14
+    TaskType: 3
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: Phase Final
+    MessageText: 
+  - TriggerTime: 176.2
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -3.6}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.28
+      Spy: 0
+    BulletSpeed: 2.66
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 176.45
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 176.75
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 177.967
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: -2.72}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.4
+      Spy: 0
+    BulletSpeed: 2.84
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 179.871
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: -1.84}
+    Shooter:
+      Ways: 19
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.52
+      Spy: 0
+    BulletSpeed: 3.02
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 180.06
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.4}
+    SpawnEnemyUseManualPosition: 0
+    IsBossEnemy: 1
+    BossFolderName: Doremi
+    BlockStageTimelineUntilBossDefeated: 1
+    BossHpStageMultiplier: 1
+    BulletOrigin: {x: 0, y: 0}
+    BulletWaveRandomXBetweenPlayRightAndOffscreen: 0
+    BulletSpawnExtraRightMin: -1
+    BulletSpawnExtraRightMax: -1
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 181.911
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -0.96}
+    Shooter:
+      Ways: 20
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.64
+      Spy: 0
+    BulletSpeed: 3.2
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 182.161
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.2}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 182.461
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 184.089
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: -0.08}
+    Shooter:
+      Ways: 21
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.76
+      Spy: 0
+    BulletSpeed: 3.38
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 186.403
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: 0.8}
+    Shooter:
+      Ways: 22
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.88
+      Spy: 0
+    BulletSpeed: 3.56
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 188.854
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: 1.68}
+    Shooter:
+      Ways: 23
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.28
+      Spy: 0
+    BulletSpeed: 2.66
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 189.104
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 189.404
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.2}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 190.621
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: 2.56}
+    Shooter:
+      Ways: 24
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.4
+      Spy: 0
+    BulletSpeed: 2.84
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 192.525
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: 3.44}
+    Shooter:
+      Ways: 25
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.52
+      Spy: 0
+    BulletSpeed: 3.02
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 194.565
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -3.6}
+    Shooter:
+      Ways: 26
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.64
+      Spy: 0
+    BulletSpeed: 3.2
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 194.815
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 1.2}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 195.115
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 196.743
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: -2.72}
+    Shooter:
+      Ways: 26
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.76
+      Spy: 0
+    BulletSpeed: 3.38
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 199.057
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: -1.84}
+    Shooter:
+      Ways: 27
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.88
+      Spy: 0
+    BulletSpeed: 3.56
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 201.508
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -0.96}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.28
+      Spy: 0
+    BulletSpeed: 2.66
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 201.758
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 202.058
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 1.2}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 203.275
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: -0.08}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.4
+      Spy: 0
+    BulletSpeed: 2.84
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 205.179
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: 0.8}
+    Shooter:
+      Ways: 19
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.52
+      Spy: 0
+    BulletSpeed: 3.02
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 207.219
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: 1.68}
+    Shooter:
+      Ways: 20
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.64
+      Spy: 0
+    BulletSpeed: 3.2
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 207.469
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 207.769
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 209.397
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: 2.56}
+    Shooter:
+      Ways: 21
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.76
+      Spy: 0
+    BulletSpeed: 3.38
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 210.06
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.4}
+    SpawnEnemyUseManualPosition: 0
+    IsBossEnemy: 1
+    BossFolderName: Handan
+    BlockStageTimelineUntilBossDefeated: 1
+    BossHpStageMultiplier: 1
+    BulletOrigin: {x: 0, y: 0}
+    BulletWaveRandomXBetweenPlayRightAndOffscreen: 0
+    BulletSpawnExtraRightMin: -1
+    BulletSpawnExtraRightMax: -1
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 211.711
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: 3.44}
+    Shooter:
+      Ways: 22
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.88
+      Spy: 0
+    BulletSpeed: 3.56
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 214.162
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -3.6}
+    Shooter:
+      Ways: 23
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.28
+      Spy: 0
+    BulletSpeed: 2.66
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 214.412
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 214.712
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 215.929
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: -2.72}
+    Shooter:
+      Ways: 24
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.4
+      Spy: 0
+    BulletSpeed: 2.84
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 217.833
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: -1.84}
+    Shooter:
+      Ways: 25
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.52
+      Spy: 0
+    BulletSpeed: 3.02
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 219.873
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -0.96}
+    Shooter:
+      Ways: 26
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.64
+      Spy: 0
+    BulletSpeed: 3.2
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 220.123
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 220.423
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 222.051
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: -0.08}
+    Shooter:
+      Ways: 26
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.76
+      Spy: 0
+    BulletSpeed: 3.38
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 224.365
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: 0.8}
+    Shooter:
+      Ways: 27
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.88
+      Spy: 0
+    BulletSpeed: 3.56
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 226.816
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: 1.68}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.28
+      Spy: 0
+    BulletSpeed: 2.66
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 227.066
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 227.366
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 228.583
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: 2.56}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.4
+      Spy: 0
+    BulletSpeed: 2.84
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 230.487
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: 3.44}
+    Shooter:
+      Ways: 19
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.52
+      Spy: 0
+    BulletSpeed: 3.02
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 232.527
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -3.6}
+    Shooter:
+      Ways: 20
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.64
+      Spy: 0
+    BulletSpeed: 3.2
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 232.777
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.2}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 233.077
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 234.705
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: -2.72}
+    Shooter:
+      Ways: 21
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.76
+      Spy: 0
+    BulletSpeed: 3.38
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 237.019
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: -1.84}
+    Shooter:
+      Ways: 22
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.88
+      Spy: 0
+    BulletSpeed: 3.56
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 239.47
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -0.96}
+    Shooter:
+      Ways: 23
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.28
+      Spy: 0
+    BulletSpeed: 2.66
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 239.72
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 240.02
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.2}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 240.06
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.4}
+    SpawnEnemyUseManualPosition: 0
+    IsBossEnemy: 1
+    BossFolderName: Reisen
+    BlockStageTimelineUntilBossDefeated: 1
+    BossHpStageMultiplier: 1
+    BulletOrigin: {x: 0, y: 0}
+    BulletWaveRandomXBetweenPlayRightAndOffscreen: 0
+    BulletSpawnExtraRightMin: -1
+    BulletSpawnExtraRightMax: -1
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 241.237
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: -0.08}
+    Shooter:
+      Ways: 24
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.4
+      Spy: 0
+    BulletSpeed: 2.84
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 243.141
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: 0.8}
+    Shooter:
+      Ways: 25
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.52
+      Spy: 0
+    BulletSpeed: 3.02
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 245.181
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: 1.68}
+    Shooter:
+      Ways: 26
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.64
+      Spy: 0
+    BulletSpeed: 3.2
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 245.431
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 1.2}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 245.731
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 247.359
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: 2.56}
+    Shooter:
+      Ways: 26
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.76
+      Spy: 0
+    BulletSpeed: 3.38
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 249.673
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: 3.44}
+    Shooter:
+      Ways: 27
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.88
+      Spy: 0
+    BulletSpeed: 3.56
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 252.124
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -3.6}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.28
+      Spy: 0
+    BulletSpeed: 2.66
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 252.374
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 252.674
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 1.2}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 253.891
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: -2.72}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.4
+      Spy: 0
+    BulletSpeed: 2.84
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 255.795
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: -1.84}
+    Shooter:
+      Ways: 19
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.52
+      Spy: 0
+    BulletSpeed: 3.02
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 257.835
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -0.96}
+    Shooter:
+      Ways: 20
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.64
+      Spy: 0
+    BulletSpeed: 3.2
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 258.085
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 258.385
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 260.013
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: -0.08}
+    Shooter:
+      Ways: 21
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.76
+      Spy: 0
+    BulletSpeed: 3.38
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 262.327
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: 0.8}
+    Shooter:
+      Ways: 22
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.88
+      Spy: 0
+    BulletSpeed: 3.56
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 264.778
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: 1.68}
+    Shooter:
+      Ways: 23
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.28
+      Spy: 0
+    BulletSpeed: 2.66
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 265.028
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 265.328
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 266.545
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: 2.56}
+    Shooter:
+      Ways: 24
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.4
+      Spy: 0
+    BulletSpeed: 2.84
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 268.449
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: 3.44}
+    Shooter:
+      Ways: 25
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.52
+      Spy: 0
+    BulletSpeed: 3.02
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 270.06
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.4}
+    SpawnEnemyUseManualPosition: 0
+    IsBossEnemy: 1
+    BossFolderName: RMarisa
+    BlockStageTimelineUntilBossDefeated: 1
+    BossHpStageMultiplier: 1
+    BulletOrigin: {x: 0, y: 0}
+    BulletWaveRandomXBetweenPlayRightAndOffscreen: 0
+    BulletSpawnExtraRightMin: -1
+    BulletSpawnExtraRightMax: -1
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 270.489
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -3.6}
+    Shooter:
+      Ways: 26
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.64
+      Spy: 0
+    BulletSpeed: 3.2
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 270.739
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 271.039
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 272.667
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: -2.72}
+    Shooter:
+      Ways: 26
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.76
+      Spy: 0
+    BulletSpeed: 3.38
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 274.981
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: -1.84}
+    Shooter:
+      Ways: 27
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.88
+      Spy: 0
+    BulletSpeed: 3.56
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 277.432
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -0.96}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.28
+      Spy: 0
+    BulletSpeed: 2.66
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 277.682
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 277.982
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 279.199
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: -0.08}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.4
+      Spy: 0
+    BulletSpeed: 2.84
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 281.103
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: 0.8}
+    Shooter:
+      Ways: 19
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.52
+      Spy: 0
+    BulletSpeed: 3.02
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 283.143
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: 1.68}
+    Shooter:
+      Ways: 20
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.64
+      Spy: 0
+    BulletSpeed: 3.2
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 283.393
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.2}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 283.693
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 285.321
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: 2.56}
+    Shooter:
+      Ways: 21
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.76
+      Spy: 0
+    BulletSpeed: 3.38
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 287.635
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: 3.44}
+    Shooter:
+      Ways: 22
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.88
+      Spy: 0
+    BulletSpeed: 3.56
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 290.086
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -3.6}
+    Shooter:
+      Ways: 23
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.28
+      Spy: 0
+    BulletSpeed: 2.66
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 290.336
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 290.636
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.2}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 291.853
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: -2.72}
+    Shooter:
+      Ways: 24
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.4
+      Spy: 0
+    BulletSpeed: 2.84
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 293.757
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: -1.84}
+    Shooter:
+      Ways: 25
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.52
+      Spy: 0
+    BulletSpeed: 3.02
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 295.797
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -0.96}
+    Shooter:
+      Ways: 26
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.64
+      Spy: 0
+    BulletSpeed: 3.2
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 296.047
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 1.2}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 296.347
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 297.975
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: -0.08}
+    Shooter:
+      Ways: 26
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.76
+      Spy: 0
+    BulletSpeed: 3.38
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 300.06
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.4}
+    SpawnEnemyUseManualPosition: 0
+    IsBossEnemy: 1
+    BossFolderName: RReimu
+    BlockStageTimelineUntilBossDefeated: 1
+    BossHpStageMultiplier: 1
+    BulletOrigin: {x: 0, y: 0}
+    BulletWaveRandomXBetweenPlayRightAndOffscreen: 0
+    BulletSpawnExtraRightMin: -1
+    BulletSpawnExtraRightMax: -1
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 300.289
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: 0.8}
+    Shooter:
+      Ways: 27
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.88
+      Spy: 0
+    BulletSpeed: 3.56
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 302.74
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: 1.68}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.28
+      Spy: 0
+    BulletSpeed: 2.66
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 302.99
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 303.29
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 1.2}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 304.507
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: 2.56}
+    Shooter:
+      Ways: 18
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.4
+      Spy: 0
+    BulletSpeed: 2.84
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 306.411
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: 3.44}
+    Shooter:
+      Ways: 19
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.52
+      Spy: 0
+    BulletSpeed: 3.02
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 308.451
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -3.6}
+    Shooter:
+      Ways: 20
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.64
+      Spy: 0
+    BulletSpeed: 3.2
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 308.701
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 309.001
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: -2.4}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 310.629
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: -2.72}
+    Shooter:
+      Ways: 21
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.76
+      Spy: 0
+    BulletSpeed: 3.38
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 312.943
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: -1.84}
+    Shooter:
+      Ways: 22
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.88
+      Spy: 0
+    BulletSpeed: 3.56
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 315.394
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: -0.96}
+    Shooter:
+      Ways: 23
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.28
+      Spy: 0
+    BulletSpeed: 2.66
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 315.644
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 315.944
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 317.161
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: -0.08}
+    Shooter:
+      Ways: 24
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.4
+      Spy: 0
+    BulletSpeed: 2.84
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 319.065
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: 0.8}
+    Shooter:
+      Ways: 25
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.52
+      Spy: 0
+    BulletSpeed: 3.02
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 321.105
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.35, y: 1.68}
+    Shooter:
+      Ways: 26
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.64
+      Spy: 0
+    BulletSpeed: 3.2
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 321.355
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 1.8}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 321.655
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 323.283
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.43, y: 2.56}
+    Shooter:
+      Ways: 26
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.76
+      Spy: 0
+    BulletSpeed: 3.38
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 325.597
+    TaskType: 1
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 6.51, y: 3.44}
+    Shooter:
+      Ways: 27
+      Angle: 180
+      VecAngle: 180
+      Range: 360
+      Radius: 0.88
+      Spy: 0
+    BulletSpeed: 3.56
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 330.06
+    TaskType: 0
+    EnemyPrefabPath: Demos/Danmaku/Prefabs/Enemy
+    SpawnPosition: {x: 5.5, y: 0.4}
+    SpawnEnemyUseManualPosition: 0
+    IsBossEnemy: 1
+    BossFolderName: Tewi
+    BlockStageTimelineUntilBossDefeated: 1
+    BossHpStageMultiplier: 1
+    BulletOrigin: {x: 0, y: 0}
+    BulletWaveRandomXBetweenPlayRightAndOffscreen: 0
+    BulletSpawnExtraRightMin: -1
+    BulletSpawnExtraRightMax: -1
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: 
+  - TriggerTime: 331.0
+    TaskType: 4
+    EnemyPrefabPath: 
+    SpawnPosition: {x: 0, y: 0}
+    BulletOrigin: {x: 0, y: 0}
+    Shooter:
+      Ways: 1
+      Angle: 0
+      VecAngle: 0
+      Range: 360
+      Radius: 0
+      Spy: 0
+    BulletSpeed: 3
+    BulletHitRadius: 0.06
+    BulletLayer: 0
+    BGMName: 
+    PhaseName: 
+    MessageText: Stage 01 Clear

@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2e8d4c61b9a4038b7e5c3d1920af4e1, type: 3}
+  m_Name: DanmakuGameplayBalance
+  m_EditorClassIdentifier: 
+  globalScoreMultiplier: 1
+  perKillScore: 100
+  perPowerScore: 2
+  perGrazeScore: 80
+  scorePointsPerSecondByElapsedTime:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scorePowerPickup: 20
+  scoreMoveSpeedPickup: 15
+  scoreFireRatePickup: 15
+  scoreHealPickup: 25
+  scoreAttackPickup: 20
+  scoreXpPickup: 30
+  powerPerKillMin: 5
+  powerPerKillMax: 15
+  powerFromPowerPickup: 25
+  grazeRadiusMultiplier: 4
+  xpPerGraze: 10
+  xpThresholdPerTier:
+  - 100
+  - 220
+  - 450
+  - 800
+  - 1300
+  xpFromPickupXpKind: 50
+  bossScaleMultiplierVsNormal: 3.25
+  bossSpriteVisualScaleFactor: 0.16858497
+  bossEnemyBulletHitRadiusMultiplier: 2.1797445
+  bonusScorePerBossKill: 8000
+  xpPerBossKill: 250
+  bossHpMultiplierVsNormal: 100
+  bossShootTimingMultiplierVsNormal: 0.55
+  deathDropChance: 0.35
+  ambientSpawnIntervalMin: 4
+  ambientSpawnIntervalMax: 9
+  ambientSpawnChance: 0.35
+  deathDropWeights:
+  - kind: 0
+    weight: 3
+  - kind: 1
+    weight: 2
+  - kind: 2
+    weight: 2
+  - kind: 3
+    weight: 1
+  - kind: 4
+    weight: 2
+  - kind: 5
+    weight: 1.5
+  ambientDropWeights:
+  - kind: 0
+    weight: 2
+  - kind: 1
+    weight: 2
+  - kind: 2
+    weight: 2
+  - kind: 3
+    weight: 1
+  - kind: 4
+    weight: 2
+  - kind: 5
+    weight: 2
+  moveSpeedBonusPerPickup: 0.08
+  fireRateBonusPerPickup: 0.1
+  attackBonusPerPickup: 0.12
+  healPerPickup: 1
+  multiShotSpreadHalfAngleDeg: 8
+  homingTurnRateDegPerSec: 540

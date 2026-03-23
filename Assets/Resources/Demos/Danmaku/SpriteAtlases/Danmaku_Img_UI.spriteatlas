@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Danmaku_Img_UI
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 7ccaf7e4cf213c746a8a89283cc3b910, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - f66ab0d0a6b0fcb49be531f99e9ba44e: 21300000
+    - f63f9f31f396e6d4a904b2e84cb41109: 21300000
+    - bd12f0f1879eb2c46b7654238bf519e9: 21300000
+    - 154f43129ace48d4e9c019457aa58534: 21300000
+    - 617b1962b5687234292d4537ece041db: 21300000
+    - feda0c262831ff54a8327ca3df0baace: 21300000
+    - 63c0c35830df1604195562e900115f22: 21300000
+    - 2686288836f400d438ac06487711ade4: 21300000
+    - 1a15f6a84347dcc4191bd1cdaa275c2c: 21300000
+    - 846d7bfa9e9b17b4b9d7771106ebcad5: 21300000
+    - c67bec2b383cc384c8bf40792f7015c2: 21300000
+    - a7d4f97ca0827b8428d53bcf85cb295b: 21300000
+    - 3b1f281d2e7311d4a92b60dafea0733b: 21300000
+    - ac93d3bdd6ac4264894574b461d5f75c: 21300000
+    - aaaf86fd8c274f44689c1b1cfbcd8ef2: 21300000
+    - 29a2381ed877aea409011c0f70959730: 21300000
+    - 7d1b512e87297b544b073eff42731026: 21300000
+    - e346b13e72a5fdd4382272840d6d0ad7: 21300000
+    - 37f91d6ec2511a94582296268ef89aff: 21300000
+    - 275b65eeb53d0c340b002b063e8618a0: 21300000
+    - e152920f9f7bb4b4f967010b88e9aa32: 21300000
+    - 4868e83f380d92244a205f38a9250caa: 21300000
+    - a135574f9479eed43b31c604b7e56794: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: f66ab0d0a6b0fcb49be531f99e9ba44e, type: 3}
+  - {fileID: 21300000, guid: f63f9f31f396e6d4a904b2e84cb41109, type: 3}
+  - {fileID: 21300000, guid: bd12f0f1879eb2c46b7654238bf519e9, type: 3}
+  - {fileID: 21300000, guid: 154f43129ace48d4e9c019457aa58534, type: 3}
+  - {fileID: 21300000, guid: 617b1962b5687234292d4537ece041db, type: 3}
+  - {fileID: 21300000, guid: feda0c262831ff54a8327ca3df0baace, type: 3}
+  - {fileID: 21300000, guid: 63c0c35830df1604195562e900115f22, type: 3}
+  - {fileID: 21300000, guid: 2686288836f400d438ac06487711ade4, type: 3}
+  - {fileID: 21300000, guid: 1a15f6a84347dcc4191bd1cdaa275c2c, type: 3}
+  - {fileID: 21300000, guid: 846d7bfa9e9b17b4b9d7771106ebcad5, type: 3}
+  - {fileID: 21300000, guid: c67bec2b383cc384c8bf40792f7015c2, type: 3}
+  - {fileID: 21300000, guid: a7d4f97ca0827b8428d53bcf85cb295b, type: 3}
+  - {fileID: 21300000, guid: 3b1f281d2e7311d4a92b60dafea0733b, type: 3}
+  - {fileID: 21300000, guid: ac93d3bdd6ac4264894574b461d5f75c, type: 3}
+  - {fileID: 21300000, guid: aaaf86fd8c274f44689c1b1cfbcd8ef2, type: 3}
+  - {fileID: 21300000, guid: 29a2381ed877aea409011c0f70959730, type: 3}
+  - {fileID: 21300000, guid: 7d1b512e87297b544b073eff42731026, type: 3}
+  - {fileID: 21300000, guid: e346b13e72a5fdd4382272840d6d0ad7, type: 3}
+  - {fileID: 21300000, guid: 37f91d6ec2511a94582296268ef89aff, type: 3}
+  - {fileID: 21300000, guid: 275b65eeb53d0c340b002b063e8618a0, type: 3}
+  - {fileID: 21300000, guid: e152920f9f7bb4b4f967010b88e9aa32, type: 3}
+  - {fileID: 21300000, guid: 4868e83f380d92244a205f38a9250caa, type: 3}
+  - {fileID: 21300000, guid: a135574f9479eed43b31c604b7e56794, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - BackToTitle
+  - Restart
+  - 0
+  - 3
+  - 7
+  - 1
+  - 1
+  - 5
+  - 2
+  - Continue
+  - Pause
+  - 4
+  - GameOverLabel
+  - 2
+  - 5
+  - PauseLabel
+  - ReisenCircle
+  - 6
+  - 0
+  - "1_0005_\u5176\u68A6\u5BD0\u4E5F----\u592B\u5BA0\u8FB1\u4E4B\u9053--\u7A77\u8FBE\u4E4B\u8FD0--\u5F97\u4E27\u4E4B\u7406--\u6B7B\u751F\u4E4B\u60C5----\u5C3D\u77E5\u4E4B\u77E3-"
+  - 4
+  - GetItemBorderLine
+  - 3
+  m_RenderDataMap: {}
+  m_Tag: Danmaku_Img_UI
+  m_IsVariant: 0

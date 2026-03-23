@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Danmaku_Img_Pickup
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 1731ae49d9a7ecb4eaade022bb76227c, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 1207e210d27ca2d4db3c164dcdf375a6: 21300000
+    - 8d397b8132875bb48a43c6ffbb95a997: 21300000
+    - 78cf95f1e42c58341b7ca26855f5c841: 21300000
+    - de4aaa026d177cb46a0475b9fcb0157b: 21300000
+    - 193f6ae3f7b701340bda287ea3abfd2a: 21300000
+    - d3bfccf3eb565114c8634cd7dcefba6a: 21300000
+    - b8574a04f80ad6342820d5fd60e27ab4: 21300000
+    - f09f69155bef76d43862b014582aebb0: 21300000
+    - 05ad126540a28144ca2667d5218cb4a7: 21300000
+    - 33a045c55dbc55a408a0870322618302: 21300000
+    - ab9e2b662d690c643a1b3506a7a1148d: 21300000
+    - 1f51b0d7792a3ff4ca5b4131db4314ef: 21300000
+    - 213a49f7903cad543943ac9c4205e32b: 21300000
+    - fdf864583f567354292bfb202295382d: 21300000
+    - 7144c7c857334be468c9a8e1dc9bc449: 21300000
+    - be5427f83a63ace4c83730ab19c6308e: 21300000
+    - 8debe699dcf4aa14d8cc17d722209bc2: 21300000
+    - 796ad6c939a8c494a9da9206a38e25c2: 21300000
+    - 8fdffe4acbcb58b41af647bdd3f033ae: 21300000
+    - 95bcd3cacac0e3641bcd3fc58e1adda6: 21300000
+    - 46ccf11be5f8b46498d767d94a44c3c9: 21300000
+    - e671c7db7eed97e409bebfe2526e3e3f: 21300000
+    - 8d4b0aadb2231c541b2f94f0f8f05150: 21300000
+    - ac1fe6bd1930c884e901aebd754a2c09: 21300000
+    - 90c964cd1fef30f43bdfd34dd2619e43: 21300000
+    - dd2e2a4e6cbd35b4a84faae4f0acb52d: 21300000
+    - 6606dd9ee0f166e4da431094ef1f76e4: 21300000
+    - 15ef827f979d18d4faf565591a0ce834: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 1207e210d27ca2d4db3c164dcdf375a6, type: 3}
+  - {fileID: 21300000, guid: 8d397b8132875bb48a43c6ffbb95a997, type: 3}
+  - {fileID: 21300000, guid: 78cf95f1e42c58341b7ca26855f5c841, type: 3}
+  - {fileID: 21300000, guid: de4aaa026d177cb46a0475b9fcb0157b, type: 3}
+  - {fileID: 21300000, guid: 193f6ae3f7b701340bda287ea3abfd2a, type: 3}
+  - {fileID: 21300000, guid: d3bfccf3eb565114c8634cd7dcefba6a, type: 3}
+  - {fileID: 21300000, guid: b8574a04f80ad6342820d5fd60e27ab4, type: 3}
+  - {fileID: 21300000, guid: f09f69155bef76d43862b014582aebb0, type: 3}
+  - {fileID: 21300000, guid: 05ad126540a28144ca2667d5218cb4a7, type: 3}
+  - {fileID: 21300000, guid: 33a045c55dbc55a408a0870322618302, type: 3}
+  - {fileID: 21300000, guid: ab9e2b662d690c643a1b3506a7a1148d, type: 3}
+  - {fileID: 21300000, guid: 1f51b0d7792a3ff4ca5b4131db4314ef, type: 3}
+  - {fileID: 21300000, guid: 213a49f7903cad543943ac9c4205e32b, type: 3}
+  - {fileID: 21300000, guid: fdf864583f567354292bfb202295382d, type: 3}
+  - {fileID: 21300000, guid: 7144c7c857334be468c9a8e1dc9bc449, type: 3}
+  - {fileID: 21300000, guid: be5427f83a63ace4c83730ab19c6308e, type: 3}
+  - {fileID: 21300000, guid: 8debe699dcf4aa14d8cc17d722209bc2, type: 3}
+  - {fileID: 21300000, guid: 796ad6c939a8c494a9da9206a38e25c2, type: 3}
+  - {fileID: 21300000, guid: 8fdffe4acbcb58b41af647bdd3f033ae, type: 3}
+  - {fileID: 21300000, guid: 95bcd3cacac0e3641bcd3fc58e1adda6, type: 3}
+  - {fileID: 21300000, guid: 46ccf11be5f8b46498d767d94a44c3c9, type: 3}
+  - {fileID: 21300000, guid: e671c7db7eed97e409bebfe2526e3e3f, type: 3}
+  - {fileID: 21300000, guid: 8d4b0aadb2231c541b2f94f0f8f05150, type: 3}
+  - {fileID: 21300000, guid: ac1fe6bd1930c884e901aebd754a2c09, type: 3}
+  - {fileID: 21300000, guid: 90c964cd1fef30f43bdfd34dd2619e43, type: 3}
+  - {fileID: 21300000, guid: dd2e2a4e6cbd35b4a84faae4f0acb52d, type: 3}
+  - {fileID: 21300000, guid: 6606dd9ee0f166e4da431094ef1f76e4, type: 3}
+  - {fileID: 21300000, guid: 15ef827f979d18d4faf565591a0ce834, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - 8 1
+  - 6
+  - 4
+  - 8
+  - Score
+  - Power
+  - 1
+  - SpellMark
+  - PowerG
+  - 7
+  - BigPowerG
+  - 3
+  - 9
+  - 5 1
+  - 2
+  - 0
+  - 1UPKagera
+  - 5
+  - 0 1
+  - 6 1
+  - 7 1
+  - BigPower
+  - 2 1
+  - 1 1
+  - 4 1
+  - 1UP
+  - 3 1
+  - 9 1
+  m_RenderDataMap: {}
+  m_Tag: Danmaku_Img_Pickup
+  m_IsVariant: 0
