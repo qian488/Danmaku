@@ -44,6 +44,8 @@ namespace DemoFrameWork.Demo.Danmaku
 
         protected override void AddListeners()
         {
+            ConfigureMobileLayoutIfNeeded();
+
             if (_playerNameText == null)
             {
                 var t = transform.Find("playerName");
@@ -70,6 +72,7 @@ namespace DemoFrameWork.Demo.Danmaku
 
         protected override void OnPropertiesSet()
         {
+            ConfigureMobileLayoutIfNeeded();
             DanmakuAudio.PlayHomeBgm(0.5f);
             RefreshCharacterUi();
             RefreshDifficultyUi();
@@ -77,6 +80,11 @@ namespace DemoFrameWork.Demo.Danmaku
 
         protected override void RemoveListeners()
         {
+        }
+
+        private void ConfigureMobileLayoutIfNeeded()
+        {
+            DanmakuMobileLayoutUtility.ConfigureScreen(transform);
         }
 
         private void BindButtonByName(string goName, UnityEngine.Events.UnityAction action)

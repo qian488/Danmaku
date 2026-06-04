@@ -279,7 +279,7 @@ namespace DemoFrameWork.GameLogic.Danmaku
             }
 
             bool showHitPoint = UnityEngine.Input.GetKey(KeyCode.LeftShift);
-            if (Application.isMobilePlatform && UnityEngine.Input.touchCount >= 2)
+            if (DanmakuMobileRuntime.IsMobileLike && DanmakuTouchInput.IsSlowHeld)
                 showHitPoint = true;
             if (_hitPointIndicator != null)
                 _hitPointIndicator.SetActive(showHitPoint);
@@ -288,30 +288,38 @@ namespace DemoFrameWork.GameLogic.Danmaku
         private void HandleMovement(float dt)
         {
             bool slow = UnityEngine.Input.GetKey(KeyCode.LeftShift);
-            if (Application.isMobilePlatform && UnityEngine.Input.touchCount >= 2)
+            if (DanmakuMobileRuntime.IsMobileLike && DanmakuTouchInput.IsSlowHeld)
                 slow = true;
             float speed = slow ? _slowSpeed : _moveSpeed;
 
             float h = 0f, v = 0f;
+            bool analogMove = false;
             if (UnityEngine.Input.GetKey(KeyCode.LeftArrow)  || UnityEngine.Input.GetKey(KeyCode.A)) h -= 1f;
             if (UnityEngine.Input.GetKey(KeyCode.RightArrow) || UnityEngine.Input.GetKey(KeyCode.D)) h += 1f;
             if (UnityEngine.Input.GetKey(KeyCode.DownArrow)  || UnityEngine.Input.GetKey(KeyCode.S)) v -= 1f;
             if (UnityEngine.Input.GetKey(KeyCode.UpArrow)    || UnityEngine.Input.GetKey(KeyCode.W)) v += 1f;
 
-            if (Application.isMobilePlatform)
+            if (DanmakuMobileRuntime.IsMobileLike)
             {
                 Vector2 j = DanmakuTouchInput.JoystickAxis;
                 if (j.sqrMagnitude > 0.0004f)
                 {
                     h = j.x;
                     v = j.y;
+                    analogMove = true;
                 }
             }
 
             Vector3 pos = transform.position;
             if (h != 0f || v != 0f)
             {
-                Vector2 move = new Vector2(h, v).normalized * (speed * _moveMul * dt);
+                Vector2 input = new Vector2(h, v);
+                if (!analogMove && input.sqrMagnitude > 1f)
+                    input.Normalize();
+                else if (analogMove)
+                    input = Vector2.ClampMagnitude(input, 1f);
+
+                Vector2 move = input * (speed * _moveMul * dt);
                 pos.x += move.x;
                 pos.y += move.y;
             }

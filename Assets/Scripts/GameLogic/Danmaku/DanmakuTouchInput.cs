@@ -7,6 +7,14 @@ namespace DemoFrameWork.GameLogic.Danmaku
     {
         public static Vector2 JoystickAxis { get; set; }
 
+        public static bool IsSlowHeld { get; set; }
+
         public static void ClearJoystick() => JoystickAxis = Vector2.zero;
+
+        public static void ClearAll()
+        {
+            JoystickAxis = Vector2.zero;
+            IsSlowHeld = false;
+        }
     }
 }

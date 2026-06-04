@@ -199,6 +199,7 @@ namespace DemoFrameWork.Demo.Danmaku
 
         private void OnEnable()
         {
+            ConfigureMobileLayoutIfNeeded();
             BindRewardZoneDelegate();
             if (_rewardIntroPending)
                 TryStartRewardIntroWhenReady();
@@ -206,6 +207,7 @@ namespace DemoFrameWork.Demo.Danmaku
 
         protected override void OnPropertiesSet()
         {
+            ConfigureMobileLayoutIfNeeded();
             _gameCtrl = UnityEngine.Object.FindObjectOfType<DanmakuGameController>();
             _elapsedTime = 0f;
             _running = true;
@@ -267,6 +269,11 @@ namespace DemoFrameWork.Demo.Danmaku
 
             _rewardIntroPending = _rewardArea != null;
             TryStartRewardIntroWhenReady();
+        }
+
+        private void ConfigureMobileLayoutIfNeeded()
+        {
+            DanmakuMobileLayoutUtility.ConfigureScreen(transform);
         }
 
         /// <summary>仅在 GameObject 已激活时启动「等两帧再闪 line」协程；否则挂起，由 <see cref="OnEnable"/> 再试。</summary>

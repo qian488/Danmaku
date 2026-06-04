@@ -64,6 +64,9 @@ namespace DemoFrameWork.Demo.Danmaku
         [Tooltip("玩法区视口：左边缘（0~1），约等于左侧 HUD 宽度，例如 0.2 = 左 20% 不可进）")]
         [SerializeField] private float _gameplayViewportXMin = 0.2f;
 
+        [Tooltip("手机端玩法区左边缘覆盖值；用于 20:9 横屏减少左侧不可移动区。")]
+        [SerializeField] private float _mobileGameplayViewportXMin = 0.08f;
+
         [SerializeField] private float _gameplayViewportXMax = 1f;
 
         [SerializeField] private float _gameplayViewportYMin = 0f;
@@ -73,6 +76,9 @@ namespace DemoFrameWork.Demo.Danmaku
         [Header("道具掉落区（视口）")]
         [Tooltip("道具只生成在 [此视口 X, 1]×[Ymin,Ymax] 对应的世界矩形内（「道具收集线」右侧至屏幕右缘）；与 Game 里竖线位置对齐后调此值）")]
         [SerializeField] private float _itemDropViewportXMin = 0.72f;
+
+        [Tooltip("手机端道具掉落区左边缘覆盖值。")]
+        [SerializeField] private float _mobileItemDropViewportXMin = 0.7f;
 
         [Tooltip("左下角 x,y + width height；仅当 _useViewportPlayArea 为 false 时使用")]
         [SerializeField] private Rect _playArea = new Rect(-8f, -4f, 14f, 8f);
@@ -140,6 +146,7 @@ namespace DemoFrameWork.Demo.Danmaku
         private void Awake()
         {
             ApplyTargetFrameRate();
+            EnsureGameplayAspectAdapter();
             EnsureRuntimeBalanceFallback();
             ResolveStageData();
             ResolvePlayer();
@@ -151,9 +158,22 @@ namespace DemoFrameWork.Demo.Danmaku
             SubscribeEvents();
         }
 
+        private void EnsureGameplayAspectAdapter()
+        {
+            if (!DanmakuMobileRuntime.IsMobileLike)
+                return;
+
+            var cam = Camera.main;
+            if (cam == null)
+                return;
+            if (cam.GetComponent<DanmakuGameplayAspectAdapter>() != null)
+                return;
+            cam.gameObject.AddComponent<DanmakuGameplayAspectAdapter>();
+        }
+
         private void EnsureMobileTouchJoystick()
         {
-            if (!Application.isMobilePlatform)
+            if (!DanmakuMobileRuntime.IsMobileLike)
                 return;
             if (FindObjectOfType<DanmakuTouchJoystick>() != null)
                 return;
@@ -616,7 +636,7 @@ namespace DemoFrameWork.Demo.Danmaku
             if (dist < 0.01f)
                 dist = 10f;
 
-            Vector3 bl = cam.ViewportToWorldPoint(new Vector3(_gameplayViewportXMin, _gameplayViewportYMin, dist));
+            Vector3 bl = cam.ViewportToWorldPoint(new Vector3(EffectiveGameplayViewportXMin, _gameplayViewportYMin, dist));
             Vector3 tr = cam.ViewportToWorldPoint(new Vector3(_gameplayViewportXMax, _gameplayViewportYMax, dist));
             float xmin = Mathf.Min(bl.x, tr.x);
             float xmax = Mathf.Max(bl.x, tr.x);
@@ -632,7 +652,7 @@ namespace DemoFrameWork.Demo.Danmaku
         {
             if (!_useViewportPlayArea)
             {
-                float t = Mathf.Clamp01(_itemDropViewportXMin);
+                float t = Mathf.Clamp01(EffectiveItemDropViewportXMin);
                 float x0 = _playArea.xMin + _playArea.width * t;
                 float w = Mathf.Max(0.01f, _playArea.xMax - x0);
                 return new Rect(x0, _playArea.yMin, w, _playArea.height);
@@ -646,7 +666,7 @@ namespace DemoFrameWork.Demo.Danmaku
             if (dist < 0.01f)
                 dist = 10f;
 
-            float vx0 = Mathf.Clamp01(_itemDropViewportXMin);
+            float vx0 = Mathf.Clamp01(EffectiveItemDropViewportXMin);
             Vector3 bl = cam.ViewportToWorldPoint(new Vector3(vx0, _gameplayViewportYMin, dist));
             Vector3 tr = cam.ViewportToWorldPoint(new Vector3(1f, _gameplayViewportYMax, dist));
             float xmin = Mathf.Min(bl.x, tr.x);
@@ -655,6 +675,12 @@ namespace DemoFrameWork.Demo.Danmaku
             float ymax = Mathf.Max(bl.y, tr.y);
             return new Rect(xmin, ymin, xmax - xmin, ymax - ymin);
         }
+
+        private float EffectiveGameplayViewportXMin =>
+            DanmakuMobileRuntime.IsMobileLike ? _mobileGameplayViewportXMin : _gameplayViewportXMin;
+
+        private float EffectiveItemDropViewportXMin =>
+            DanmakuMobileRuntime.IsMobileLike ? _mobileItemDropViewportXMin : _itemDropViewportXMin;
 
         private static string ResolveLoadingPanelId()
         {

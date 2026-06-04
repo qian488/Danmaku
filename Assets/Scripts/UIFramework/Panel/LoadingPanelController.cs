@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using DemoFrameWork.GameLogic.Danmaku;
 
 namespace DemoFrameWork.UI
 {
@@ -25,8 +26,14 @@ namespace DemoFrameWork.UI
 
         protected override void OnPropertiesSet()
         {
+            ConfigureMobileLayoutIfNeeded();
             if (Properties != null)
                 Properties.Priority = PanelPriority.Blocker;
+        }
+
+        protected override void HierarchyFixOnShow()
+        {
+            ConfigureMobileLayoutIfNeeded();
         }
 
         /// <summary>由 <see cref="DemoFrameWork.Scene.SceneLoadingOverlay"/> 或主场景预加载逻辑调用。</summary>
@@ -70,10 +77,16 @@ namespace DemoFrameWork.UI
 
         protected override void AddListeners()
         {
+            ConfigureMobileLayoutIfNeeded();
         }
 
         protected override void RemoveListeners()
         {
+        }
+
+        private void ConfigureMobileLayoutIfNeeded()
+        {
+            DanmakuMobileLayoutUtility.ConfigureScreen(transform);
         }
     }
 }
